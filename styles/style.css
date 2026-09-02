@@ -8,7 +8,7 @@ header {
     padding-left: 146px;
 }
 
-.header-logo{
+.header-logo {
     width: 98px;
 }
 
@@ -24,4 +24,38 @@ nav>a {
     font-weight: 700;
 
     color: rgba(248, 245, 235, 1);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--primary-bg-color-header-footer);
+    height: 128px;
+    padding: 0 120px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 72px;
+
+    font-family: Palanquin;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-links a{
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-links-copyright {
+    display: flex;
+    gap: 4px;
+}
+
+.footer-social-media-links {
+    display: flex;
+    gap: 16px;
 }
