@@ -1,0 +1,10 @@
+.video-section {
+    padding: 137px 377px;
+    gap: 10px;
+
+}
+
+.video-container {
+border-radius: 53px;
+    overflow: hidden;
+}
