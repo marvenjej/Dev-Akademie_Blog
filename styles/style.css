@@ -44,10 +44,17 @@ footer {
     font-size: 16px;
     font-weight: 400;
     color: rgba(255, 255, 255, 1);
+
 }
 
 .footer-links a{
     color: rgba(255, 255, 255, 1);
+
+}
+
+.footer-links p{
+    text-wrap-mode: nowrap;
+
 }
 
 .footer-links-copyright {
