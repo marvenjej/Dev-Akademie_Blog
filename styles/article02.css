@@ -1,16 +1,15 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    scroll-behavior: smooth;
+
+.text-introduction {
+   font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 400;
 }
 
 
 
-
-
-
-
-
+video {
+    width: 100%;
+}
 
 
 .video-section {
@@ -20,15 +19,18 @@
 }
 
 .video-container {
-border-radius: 53px;
+    border-radius: 53px;
+    width: 100%;
     overflow: hidden;
 }
 
 .tips-section {
     background-color:rgba(78, 164, 135, 0.2);
     padding: 26px 16px 24px 16px;
-    border-radius: 53px;
+    border-radius: 30px;
 
-    height: 195px;
-    weidth: 1083px;
+    width: 70%;
+    margin: 0 auto;
+
+    position: relative
 }
