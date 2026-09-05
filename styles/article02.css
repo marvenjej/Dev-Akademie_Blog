@@ -1,27 +1,52 @@
-
-.text-introduction {
-   font-family: 'Palanquin';
-  font-style: normal;
-  font-weight: 400;
+.content {
+    margin: 0 calc((100% - 1200px) / 2);
 }
 
+.text-introduction {
 
+    font-family: 'Palanquin';
+    font-size: 24px;
+
+    padding-top: 32px;
+}
 
 video {
     width: 100%;
 }
 
-
 .video-section {
-    padding: 137px 377px;
-    gap: 10px;
-
+    padding: 64px 200px;
 }
 
 .video-container {
     border-radius: 53px;
     width: 100%;
     overflow: hidden;
+}
+
+.text-main {
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.text-list {
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.text-conclusion {
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
 }
 
 .tips-section {
@@ -31,6 +56,11 @@ video {
 
     width: 70%;
     margin: 0 auto;
+
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
 
     position: relative
 }
