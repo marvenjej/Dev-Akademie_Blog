@@ -1,3 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
 .video-section {
     padding: 137px 377px;
     gap: 10px;
@@ -7,4 +22,13 @@
 .video-container {
 border-radius: 53px;
     overflow: hidden;
+}
+
+.tips-section {
+    background-color:rgba(78, 164, 135, 0.2);
+    padding: 26px 16px 24px 16px;
+    border-radius: 53px;
+
+    height: 195px;
+    weidth: 1083px;
 }
