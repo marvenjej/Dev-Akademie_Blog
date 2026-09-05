@@ -36,13 +36,20 @@ nav>a {
     margin: 32px;
 }
 
-.share-button-section > p {
-    font-size: 24px;
-    font-family: Arima;
-    color: rgba(84, 55, 13, 1);
+.share-button-section>p {
     flex-wrap: wrap;
 
+    font-size: 24px;
+    font-family: Arima;
+    font-weight: 500;
+    text-align: center;
+
+    color: rgba(84, 55, 13, 1);
+    width: 460px;
+    padding: 10px;
 }
+
+
 
 .share-button {
     display: flex;
@@ -68,11 +75,19 @@ nav>a {
     color: rgba(241, 201, 83, 1);
 }
 
+.share-button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-
-body {
-    color: rgba(61, 61, 61, 1);
+    position: relative;
 }
+
+.share-button-wrapper>img {
+    top: -18px; right: 252px;
+    position: absolute;
+}
+
 
 footer {
     display: flex;
