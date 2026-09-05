@@ -1,7 +1,5 @@
 .content {
     margin: 0 calc((100% - 1200px) / 2);
-    color: rgba(61, 61, 61, 1);
-
 }
 
 .text-introduction {
@@ -15,10 +13,13 @@
 
 video {
     width: 100%;
+    display: block;
 }
 
 .video-section {
     padding: 64px 200px;
+    border-radius: 53px;
+    width: 100%;
 }
 
 .video-container {
