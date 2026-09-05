@@ -1,11 +1,14 @@
 .content {
     margin: 0 calc((100% - 1200px) / 2);
+    color: rgba(61, 61, 61, 1);
+
 }
 
 .text-introduction {
 
     font-family: 'Palanquin';
     font-size: 24px;
+
 
     padding-top: 32px;
 }

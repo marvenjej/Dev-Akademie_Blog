@@ -26,6 +26,10 @@ nav>a {
     color: rgba(248, 245, 235, 1);
 }
 
+body {
+    color: rgba(61, 61, 61, 1);
+}
+
 footer {
     display: flex;
     align-items: center;
