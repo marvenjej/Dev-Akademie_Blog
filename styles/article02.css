@@ -7,15 +7,19 @@
     font-family: 'Palanquin';
     font-size: 24px;
 
+
     padding-top: 32px;
 }
 
 video {
     width: 100%;
+    display: block;
 }
 
 .video-section {
     padding: 64px 200px;
+    border-radius: 53px;
+    width: 100%;
 }
 
 .video-container {
