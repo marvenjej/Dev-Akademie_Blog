@@ -31,7 +31,7 @@ nav>a {
 }
 
 
-.landing-section-hero {
+.landing-page-hero {
     background-color: rgba(241, 201, 83, 1);
     height: 515px;
 
@@ -81,19 +81,17 @@ nav>a {
     top: 100px;
     left: 50px;
 
-    width: 345px;
-    height: 132px;
-
     font-family: Palanquin;
     font-size: 28px;
     font-weight: 500;
+
 
     position: absolute;
     z-index: 3;
 }
 
 .tips-container {
-   position: relative;
+    position: relative;
     padding: 25px 0px;
 }
 
@@ -105,7 +103,7 @@ nav>a {
 }
 
 .tips-section {
-    background-color:rgba(78, 164, 135, 0.2);
+    background-color: rgba(78, 164, 135, 0.2);
     padding: 26px 16px 24px 16px;
     border-radius: 30px;
 
@@ -180,7 +178,7 @@ nav>a {
     position: absolute;
 }
 
-.contact-header {
+.lading-page-headline {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,7 +199,7 @@ nav>a {
     color: rgba(84, 55, 13, 1);
 }
 
-.contact-text >p {
+.contact-text>p {
     padding-bottom: 56px;
 }
 
@@ -220,10 +218,10 @@ nav>a {
     display: flex;
     flex-direction: column;
     width: 45%;
-    text-align:start;
+    text-align: start;
 }
 
-.name >input {
+.name>input {
     border: none;
     border-bottom: 1px solid rgba(84, 55, 13, 1);
     padding-top: 36px;
@@ -241,7 +239,7 @@ nav>a {
     text-align: start;
 }
 
-.email >input {
+.email>input {
     border: none;
     border-bottom: 1px solid rgba(84, 55, 13, 1);
     padding-top: 36px;
@@ -263,7 +261,7 @@ textarea {
     border: none;
     border-bottom: 1px solid rgba(84, 55, 13, 1);
     padding-top: 36px;
-    
+
     font-family: 'Palanquin';
     font-weight: 500;
     font-size: 24px;
