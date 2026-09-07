@@ -78,29 +78,3 @@
 .text-block-section {
     margin-bottom: 64px;
 }
-
-.tips-container {
-   position: relative;
-    padding: 25px 0px;
-}
-
-.tips-img {
-    position: absolute;
-    top: -45px;
-    left: 0;
-    z-index: 10;
-}
-
-.tips-section {
-    background-color:rgba(78, 164, 135, 0.2);
-    padding: 26px 16px 24px 16px;
-    border-radius: 30px;
-
-    width: 90%;
-    margin: 0 auto;
-
-    font-family: 'Palanquin';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-}
