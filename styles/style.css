@@ -154,6 +154,95 @@ nav>a {
     position: absolute;
 }
 
+.contact-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: rgba(78, 164, 135, 1);
+    font-size: 52px;
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 700;
+
+    gap: 16px;
+}
+
+.contact-text {
+    font-family: 'Palanquin';
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(84, 55, 13, 1);
+}
+
+.contact-text >p {
+    padding-bottom: 56px;
+}
+
+.contact-form {
+    text-align: center;
+
+    padding-top: 36px;
+}
+
+.personal-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    text-align:start;
+}
+
+.name >input {
+    border: none;
+    border-bottom: 1px solid rgba(84, 55, 13, 1);
+    padding-top: 36px;
+
+    font-family: 'Palanquin';
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(78, 164, 135, 1);
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    text-align: start;
+}
+
+.email >input {
+    border: none;
+    border-bottom: 1px solid rgba(84, 55, 13, 1);
+    padding-top: 36px;
+
+    font-family: 'Palanquin';
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(78, 164, 135, 1);
+}
+
+.help {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding-top: 49px;
+}
+
+textarea {
+    border: none;
+    border-bottom: 1px solid rgba(84, 55, 13, 1);
+    padding-top: 36px;
+    
+    font-family: 'Palanquin';
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(78, 164, 135, 1);
+}
 
 footer {
     display: flex;
