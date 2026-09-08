@@ -31,7 +31,7 @@ nav>a {
 }
 
 
-.landing-section-hero {
+.landing-page-hero {
     background-color: rgba(241, 201, 83, 1);
     height: 515px;
 
@@ -81,15 +81,39 @@ nav>a {
     top: 100px;
     left: 50px;
 
-    width: 345px;
-    height: 132px;
-
     font-family: Palanquin;
     font-size: 28px;
     font-weight: 500;
 
+
     position: absolute;
     z-index: 3;
+}
+
+.tips-container {
+    position: relative;
+    padding: 25px 0px;
+}
+
+.tips-img {
+    position: absolute;
+    top: -45px;
+    left: 0;
+    z-index: 10;
+}
+
+.tips-section {
+    background-color: rgba(78, 164, 135, 0.2);
+    padding: 26px 16px 24px 16px;
+    border-radius: 30px;
+
+    width: 90%;
+    margin: 0 auto;
+
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
 }
 
 .share-button-section {
@@ -154,6 +178,7 @@ nav>a {
     position: absolute;
 }
 
+<<<<<<< HEAD
 .contact-form {
     font-family: 'Palanquin';
     font-weight: 500;
@@ -165,6 +190,9 @@ nav>a {
 }
 
 .contact-header {
+=======
+.lading-page-headline {
+>>>>>>> 9b838971af1653701dddc9b9b3d74a0d3427d597
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,7 +206,18 @@ nav>a {
     gap: 16px;
 }
 
+<<<<<<< HEAD
 .contact-text >p {
+=======
+.contact-text {
+    font-family: 'Palanquin';
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(84, 55, 13, 1);
+}
+
+.contact-text>p {
+>>>>>>> 9b838971af1653701dddc9b9b3d74a0d3427d597
     padding-bottom: 56px;
 }
 
@@ -191,9 +230,23 @@ nav>a {
     display: flex;
     flex-direction: column;
     width: 45%;
-    text-align:start;
+    text-align: start;
 }
 
+<<<<<<< HEAD
+=======
+.name>input {
+    border: none;
+    border-bottom: 1px solid rgba(84, 55, 13, 1);
+    padding-top: 36px;
+
+    font-family: 'Palanquin';
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(78, 164, 135, 1);
+}
+
+>>>>>>> 9b838971af1653701dddc9b9b3d74a0d3427d597
 .email {
     display: flex;
     flex-direction: column;
@@ -201,6 +254,20 @@ nav>a {
     text-align: start;
 }
 
+<<<<<<< HEAD
+=======
+.email>input {
+    border: none;
+    border-bottom: 1px solid rgba(84, 55, 13, 1);
+    padding-top: 36px;
+
+    font-family: 'Palanquin';
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(78, 164, 135, 1);
+}
+
+>>>>>>> 9b838971af1653701dddc9b9b3d74a0d3427d597
 .help {
     display: flex;
     flex-direction: column;
@@ -214,7 +281,14 @@ textarea {
     border: none;
     border-bottom: 1px solid rgba(84, 55, 13, 1);
     padding-top: 36px;
+<<<<<<< HEAD
     
+=======
+
+    font-family: 'Palanquin';
+    font-weight: 500;
+    font-size: 24px;
+>>>>>>> 9b838971af1653701dddc9b9b3d74a0d3427d597
     color: rgba(78, 164, 135, 1);
 }
 
