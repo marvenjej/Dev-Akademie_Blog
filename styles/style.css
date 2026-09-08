@@ -154,6 +154,16 @@ nav>a {
     position: absolute;
 }
 
+.contact-form {
+    font-family: 'Palanquin';
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(84, 55, 13, 1);
+
+    text-align: center;
+    padding: 80px 0;
+}
+
 .contact-header {
     display: flex;
     justify-content: center;
@@ -168,21 +178,8 @@ nav>a {
     gap: 16px;
 }
 
-.contact-text {
-    font-family: 'Palanquin';
-    font-weight: 500;
-    font-size: 24px;
-    color: rgba(84, 55, 13, 1);
-}
-
 .contact-text >p {
     padding-bottom: 56px;
-}
-
-.contact-form {
-    text-align: center;
-
-    padding-top: 36px;
 }
 
 .personal-data {
@@ -197,33 +194,11 @@ nav>a {
     text-align:start;
 }
 
-.name >input {
-    border: none;
-    border-bottom: 1px solid rgba(84, 55, 13, 1);
-    padding-top: 36px;
-
-    font-family: 'Palanquin';
-    font-weight: 500;
-    font-size: 24px;
-    color: rgba(78, 164, 135, 1);
-}
-
 .email {
     display: flex;
     flex-direction: column;
     width: 49%;
     text-align: start;
-}
-
-.email >input {
-    border: none;
-    border-bottom: 1px solid rgba(84, 55, 13, 1);
-    padding-top: 36px;
-
-    font-family: 'Palanquin';
-    font-weight: 500;
-    font-size: 24px;
-    color: rgba(78, 164, 135, 1);
 }
 
 .help {
@@ -233,15 +208,52 @@ nav>a {
     padding-top: 49px;
 }
 
+.name > input,
+.email > input,
 textarea {
     border: none;
     border-bottom: 1px solid rgba(84, 55, 13, 1);
     padding-top: 36px;
     
-    font-family: 'Palanquin';
-    font-weight: 500;
-    font-size: 24px;
     color: rgba(78, 164, 135, 1);
+}
+
+.privacy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    font-weight: 400;
+    font-size: 15px;
+    padding-top: 16px;
+    padding-bottom: 36px;
+}
+
+.privacy > input {
+    height: 18px;
+    width: 18px;
+}
+
+.privacy a {
+    color: rgba(78, 164, 135, 1);
+}
+
+.send-button {
+    display: inline-flex;
+    padding: 9px 40px;
+    border-radius: 40px;
+
+    font-size:24px;
+    font-family: 'Arima';
+    font-weight: 700;
+
+    border: 1px solid rgba(115, 115, 115, 1);
+
+    color: rgba(115, 115, 115, 1);
+
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
@@ -258,7 +270,6 @@ footer {
     display: flex;
     gap: 72px;
 
-    font-family: Palanquin;
     font-size: 16px;
     font-weight: 400;
     color: rgba(255, 255, 255, 1);
