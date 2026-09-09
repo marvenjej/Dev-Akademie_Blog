@@ -206,18 +206,7 @@ nav>a {
     gap: 16px;
 }
 
-<<<<<<< HEAD
 .contact-text >p {
-=======
-.contact-text {
-    font-family: 'Palanquin';
-    font-weight: 500;
-    font-size: 24px;
-    color: rgba(84, 55, 13, 1);
-}
-
-.contact-text>p {
->>>>>>> 9b838971af1653701dddc9b9b3d74a0d3427d597
     padding-bottom: 56px;
 }
 
@@ -233,20 +222,6 @@ nav>a {
     text-align: start;
 }
 
-<<<<<<< HEAD
-=======
-.name>input {
-    border: none;
-    border-bottom: 1px solid rgba(84, 55, 13, 1);
-    padding-top: 36px;
-
-    font-family: 'Palanquin';
-    font-weight: 500;
-    font-size: 24px;
-    color: rgba(78, 164, 135, 1);
-}
-
->>>>>>> 9b838971af1653701dddc9b9b3d74a0d3427d597
 .email {
     display: flex;
     flex-direction: column;
@@ -254,20 +229,6 @@ nav>a {
     text-align: start;
 }
 
-<<<<<<< HEAD
-=======
-.email>input {
-    border: none;
-    border-bottom: 1px solid rgba(84, 55, 13, 1);
-    padding-top: 36px;
-
-    font-family: 'Palanquin';
-    font-weight: 500;
-    font-size: 24px;
-    color: rgba(78, 164, 135, 1);
-}
-
->>>>>>> 9b838971af1653701dddc9b9b3d74a0d3427d597
 .help {
     display: flex;
     flex-direction: column;
@@ -281,14 +242,7 @@ textarea {
     border: none;
     border-bottom: 1px solid rgba(84, 55, 13, 1);
     padding-top: 36px;
-<<<<<<< HEAD
     
-=======
-
-    font-family: 'Palanquin';
-    font-weight: 500;
-    font-size: 24px;
->>>>>>> 9b838971af1653701dddc9b9b3d74a0d3427d597
     color: rgba(78, 164, 135, 1);
 }
 
