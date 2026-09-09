@@ -139,7 +139,7 @@ nav>a {
     text-align: center;
 
     color: rgba(84, 55, 13, 1);
-    width: 460px;
+    width: 480px;
     padding: 10px;
 }
 
@@ -179,7 +179,7 @@ nav>a {
 
 .share-button-wrapper>img {
     top: -18px;
-    right: 252px;
+    right: 270px;
     position: absolute;
 }
 
