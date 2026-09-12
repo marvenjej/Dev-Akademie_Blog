@@ -201,13 +201,15 @@ nav>a {
     justify-content: center;
     align-items: center;
 
+    gap: 16px;
+}
+
+.lading-page-headline h2 {
     color: rgba(78, 164, 135, 1);
     font-size: 52px;
     font-family: 'Arima';
     font-style: normal;
     font-weight: 700;
-
-    gap: 16px;
 }
 
 .contact-text>p {
@@ -341,8 +343,9 @@ footer {
         display: none;
     }
 
-    .footer-links{
-    flex-direction: column;}
+    .footer-links {
+        flex-direction: column;
+    }
 
     .footer-social-media-links {}
 
