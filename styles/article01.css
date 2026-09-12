@@ -102,3 +102,10 @@ li {
 .text-block-list>ol>li {
     line-height: 1.3;
 }
+
+@media screen and (max-width: 767px) {
+     .article-beach-section {
+        display: none;
+    }
+
+}
