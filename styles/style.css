@@ -272,20 +272,20 @@ nav>a {
     opacity: 0;
     block-size: 0;
     overflow-y: clip;
-    margin: 0;                     
+    margin: 0;
     border-radius: 12px 12px 12px 12px;
 
     transition:
         content-visibility 0.6s allow-discrete,
         opacity 0.6s ease-in-out,
         block-size 0.6s ease-in-out,
-        margin 0.6s ease-in-out;    
+        margin 0.6s ease-in-out;
 }
 
 .faq-accordion details[open]::details-content {
     opacity: 1;
     block-size: auto;
-    margin: 0 12px 12px 12px;          
+    margin: 0 12px 12px 12px;
 }
 
 @starting-style {
@@ -446,6 +446,10 @@ footer {
 
     nav {
         display: none;
+    }
+
+    .content {
+        padding-inline: 16px;
     }
 
     .footer-links {
