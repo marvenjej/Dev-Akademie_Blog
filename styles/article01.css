@@ -18,20 +18,40 @@
 }
 
 .article-beach-section-slider {
-    height: 250px;
+    --card-w: clamp(200px, 17.4vw, 250px);
+
+    height: var(--card-w);
     display: flex;
     justify-content: center;
     align-items: center;
 
-    padding: 0 60px;
+    padding: 0 calc(var(--card-w) * 0.24);
     margin-bottom: 150px;
 }
 
+.article-beach-section-slider_element {
+    z-index: 1;
+    width: var(--card-w);
+    aspect-ratio: 250 / 440;
+
+    border-radius: 16px;
+    overflow: hidden;
+
+     box-shadow: 0px 1px 1px rgba(3, 7, 18, 0.02),
+        0px 5px 4px rgba(3, 7, 18, 0.03),
+        0px 12px 9px rgba(3, 7, 18, 0.05),
+        0px 20px 15px rgba(3, 7, 18, 0.06),
+        0px 32px 24px rgba(3, 7, 18, 0.08);
+
+    transform: perspective(var(--card-w)) rotateY(20deg) translateX(calc(var(--card-w) * -0.08));
+    transform-origin: 50% 50%;
+    transition: transform 250ms ease-in-out;
+}
 
 .article-beach-section-slider_element {
     z-index: 1;
-    width: 250px;
-    height: 440px;
+    width: var(--card-w);
+    aspect-ratio: 250 / 440;
 
     border-radius: 16px;
     overflow: hidden;
@@ -42,13 +62,9 @@
         0px 20px 15px rgba(3, 7, 18, 0.06),
         0px 32px 24px rgba(3, 7, 18, 0.08);
 
-    transform: perspective(250px) rotateY(20deg) translateX(-20px);
+    transform: perspective(var(--card-w)) rotateY(20deg) translateX(calc(var(--card-w) * -0.08));
     transform-origin: 50% 50%;
     transition: transform 250ms ease-in-out;
-}
-
-.article-beach-section-slider_element:not(:first-child) {
-    margin-left: -90px;
 }
 
 .article-beach-section-slider_element img {
@@ -58,17 +74,21 @@
     display: block;
 }
 
+.article-beach-section-slider_element:not(:first-child) {
+    margin-left: calc(var(--card-w) * -0.36);
+}
+
 .article-beach-section-slider_element:hover {
     z-index: 2;
-    transform: perspective(250px) rotateY(0deg) translateX(0px) scale(1.15);
+    transform: perspective(var(--card-w)) rotateY(0deg) translateX(0px) scale(1.15);
 }
 
 .article-beach-section-slider_element:hover~.article-beach-section-slider_element {
-    transform: perspective(250px) rotateY(-20deg) translateX(130px);
+    transform: perspective(var(--card-w)) rotateY(-20deg) translateX(calc(var(--card-w) * 0.52));
 }
 
 .article-beach-section-slider_element:has(~ .article-beach-section-slider_element:hover) {
-    transform: perspective(250px) rotateY(20deg) translateX(-130px);
+    transform: perspective(var(--card-w)) rotateY(20deg) translateX(calc(var(--card-w) * -0.52));
 }
 
 .article-beach-section-slider-mobile {
