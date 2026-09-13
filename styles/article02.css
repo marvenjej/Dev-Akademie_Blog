@@ -5,7 +5,7 @@
 .text-introduction {
 
     font-family: 'Palanquin';
-    font-size: 24px;
+    font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
 
 
     padding-top: 32px;
@@ -31,14 +31,14 @@ video {
     font-family: 'Palanquin';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
 }
 
 .text-list {
     font-family: 'Palanquin';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
     padding: 36px 0px;
 }
 
@@ -46,7 +46,7 @@ video {
     font-family: 'Palanquin';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
 
     padding: 36px 0px 120px 0px;
 }

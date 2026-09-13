@@ -27,12 +27,11 @@ nav>a {
 }
 
 .content {
-    /* margin: 0 calc((100% - 1440px) / 2); */
-    /* max-width: 1440px;
-    margin: 0 auto; */
-
-    /* padding-block: 64px; */
-    padding-inline: max(calc(50% - 720px), 120px);
+    padding-inline: max(clamp(1.5rem, -0.21rem + 8.57vw, 7.5rem),
+            /* Rand wächst fließend von 24px auf 120px */
+            calc(50% - 720px)
+            /* deckelt den Inhalt bei sehr breiten Screens auf 1440px */
+        );
 
 }
 
@@ -446,10 +445,6 @@ footer {
 
     nav {
         display: none;
-    }
-
-    .content {
-        padding-inline: 16px;
     }
 
     .footer-links {
