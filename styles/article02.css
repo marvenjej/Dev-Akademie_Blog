@@ -1,28 +1,27 @@
-.content {
-    margin: 0 calc((100% - 1200px) / 2);
-}
-
 .text-introduction {
 
     font-family: 'Palanquin';
     font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
 
 
-    padding-top: 32px;
+    padding-top: 2rem;
 }
 
 video {
     display: block;
+    width: 100%;
+    height: auto;
 }
 
 .video-section {
-    padding: 64px 200px;
-    border-radius: 53px;
+    padding-block: clamp(1rem, -0.056rem + 4.507vw, 4rem);
+    padding-inline: clamp(0rem, 4vw, 4.6875rem);
+    border-radius: clamp(1.5rem, 3vw, 3.3125rem);
     width: 100%;
 }
 
 .video-container {
-    border-radius: 53px;
+    border-radius: clamp(1.5rem, 3vw, 3.3125rem);
     width: 100%;
     overflow: hidden;
 }
@@ -39,7 +38,11 @@ video {
     font-style: normal;
     font-weight: 400;
     font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
-    padding: 36px 0px;
+    padding: 1.5rem 0rem;
+}
+
+ul { 
+    margin-top: 1.5rem;
 }
 
 .text-conclusion {
@@ -48,5 +51,5 @@ video {
     font-weight: 400;
     font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
 
-    padding: 36px 0px 120px 0px;
+    padding-bottom: clamp(3rem, 0.064rem + 8.263vw, 7.5rem);
 }
