@@ -117,7 +117,7 @@
         --card-w: 72vw;
         --gap: 4vw;
         --step: calc(var(--card-w) + var(--gap));
-        --center-offset: calc((100vw - 32px - var(--card-w)) / 2);
+        --center-offset: calc((100vw - 2 * var(--content-padding) - var(--card-w)) / 2);
 
         display: block;
         position: relative;

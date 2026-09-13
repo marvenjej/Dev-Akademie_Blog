@@ -27,11 +27,12 @@ nav>a {
 }
 
 .content {
-    padding-inline: max(clamp(1.5rem, -0.21rem + 8.57vw, 7.5rem),
+    --content-padding: max(clamp(1.5rem, -0.21rem + 8.57vw, 7.5rem),
             /* Rand wächst fließend von 24px auf 120px */
             calc(50% - 720px)
             /* deckelt den Inhalt bei sehr breiten Screens auf 1440px */
         );
+    padding-inline: var(--content-padding);
 
 }
 
