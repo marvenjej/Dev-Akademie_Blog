@@ -1,9 +1,6 @@
 .text-introduction {
-
     font-family: 'Palanquin';
     font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
-
-
     padding-top: 2rem;
 }
 
@@ -41,7 +38,7 @@ video {
     padding: 1.5rem 0rem;
 }
 
-ul { 
+ul {
     margin-top: 1.5rem;
 }
 
@@ -50,6 +47,14 @@ ul {
     font-style: normal;
     font-weight: 400;
     font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
+    padding-bottom: clamp(2.5rem, 0.064rem + 8.263vw, 7.5rem);
+}
 
-    padding-bottom: clamp(3rem, 0.064rem + 8.263vw, 7.5rem);
+@media screen and (max-width: 768px) {
+    .text-introduction,
+    .text-main,
+    .text-list,
+    .text-conclusion {
+        color: rgba(84, 55, 13, 1);
+    }
 }

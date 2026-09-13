@@ -126,6 +126,13 @@ nav>a {
     font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
 }
 
+.tips-link {
+    color: rgba(78, 164, 135, 1);
+
+}
+
+
+
 .share-button-section {
     display: flex;
     justify-content: center;
@@ -447,7 +454,7 @@ footer {
         display: none;
     }
 
-        .tips-section {
+    .tips-section {
         width: 100%;
     }
 
