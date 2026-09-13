@@ -114,7 +114,7 @@
     .article-beach-section-slider-mobile {
         margin-top: 50px;
 
-        --card-w: 72vw;
+        --card-w: clamp(195px, calc(125px + 21.92vw), 293px);
         --gap: 4vw;
         --step: calc(var(--card-w) + var(--gap));
         --center-offset: calc((100vw - 2 * var(--content-padding) - var(--card-w)) / 2);
