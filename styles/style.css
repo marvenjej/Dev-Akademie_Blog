@@ -447,6 +447,10 @@ footer {
         display: none;
     }
 
+        .tips-section {
+        width: 100%;
+    }
+
     .footer-links {
         flex-direction: column;
     }
