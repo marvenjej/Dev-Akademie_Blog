@@ -18,7 +18,7 @@
 }
 
 .article-beach-section-slider {
-    --card-w: clamp(200px, 17.4vw, 250px);
+    --card-w: clamp(130px, 17.4vw, 250px);
 
     height: var(--card-w);
     display: flex;
@@ -64,7 +64,7 @@
 
     transform: perspective(var(--card-w)) rotateY(20deg) translateX(calc(var(--card-w) * -0.08));
     transform-origin: 50% 50%;
-    transition: transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out, box-shadow 250ms ease-in-out, filter 250ms ease-in-out;
 }
 
 .article-beach-section-slider_element img {
@@ -80,15 +80,22 @@
 
 .article-beach-section-slider_element:hover {
     z-index: 2;
-    transform: perspective(var(--card-w)) rotateY(0deg) translateX(0px) scale(1.15);
+    transform: perspective(var(--card-w)) rotateY(0deg) translateX(0px) scale(1.25);
+    box-shadow: 0px 2px 2px rgba(3, 7, 18, 0.04),
+        0px 8px 8px rgba(3, 7, 18, 0.06),
+        0px 20px 16px rgba(3, 7, 18, 0.08),
+        0px 32px 24px rgba(3, 7, 18, 0.10),
+        0px 48px 36px rgba(3, 7, 18, 0.12);
 }
 
 .article-beach-section-slider_element:hover~.article-beach-section-slider_element {
     transform: perspective(var(--card-w)) rotateY(-20deg) translateX(calc(var(--card-w) * 0.52));
+    filter: brightness(0.85);
 }
 
 .article-beach-section-slider_element:has(~ .article-beach-section-slider_element:hover) {
     transform: perspective(var(--card-w)) rotateY(20deg) translateX(calc(var(--card-w) * -0.52));
+    filter: brightness(0.85);
 }
 
 .article-beach-section-slider-mobile {
