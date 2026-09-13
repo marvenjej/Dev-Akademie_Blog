@@ -19,7 +19,7 @@ nav {
 
 nav>a {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: Arima;
     font-weight: 700;
 
@@ -78,7 +78,7 @@ nav>a {
 .hero-headline h1 {
 
     font-family: Arima;
-    font-size: 60px;
+    font-size: 3.75rem;
     color: rgba(84, 55, 13, 1);
     z-index: 3;
 }
@@ -87,7 +87,7 @@ nav>a {
     margin: 0;
 
     font-family: Palanquin;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 500;
     line-height: 1;
     z-index: 3;
@@ -124,7 +124,7 @@ nav>a {
     font-family: 'Palanquin';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
 }
 
 .share-button-section {
@@ -139,7 +139,7 @@ nav>a {
 .share-button-section>p {
     flex-wrap: wrap;
 
-    font-size: 24px;
+    font-size: clamp(1.125rem, 1.0179rem + 0.5357vw, 1.5rem);
     font-family: Arima;
     font-weight: 500;
     text-align: center;
@@ -169,7 +169,7 @@ nav>a {
 }
 
 .share-button p {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     font-family: Arima;
     color: rgba(241, 201, 83, 1);
@@ -199,7 +199,7 @@ nav>a {
 
 .lading-page-headline h2 {
     color: rgba(78, 164, 135, 1);
-    font-size: 52px;
+    font-size: clamp(2.5rem, 2.2857rem + 1.0714vw, 3.25rem);
     font-family: 'Arima';
     font-style: normal;
     font-weight: 700;
@@ -248,7 +248,7 @@ nav>a {
     width: 100%;
 
     font-family: Palanquin;
-    font-size: 24px;
+    font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
     font-weight: 700;
     color: rgba(84, 55, 13, 1);
 
@@ -301,7 +301,7 @@ nav>a {
     margin: 0;
 
     font-family: Palanquin;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     color: rgba(84, 55, 13, 1);
     line-height: 1.1;
@@ -310,7 +310,7 @@ nav>a {
 .contact-form {
     font-family: 'Palanquin';
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: rgba(84, 55, 13, 1);
 
     text-align: center;
@@ -356,7 +356,7 @@ textarea {
 
     font-family: 'Palanquin';
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: rgba(78, 164, 135, 1);
 }
 
@@ -367,7 +367,7 @@ textarea {
     gap: 8px;
 
     font-weight: 400;
-    font-size: 15px;
+    font-size: 0.938rem;
 
     padding-top: 16px;
     padding-bottom: 36px;
@@ -391,7 +391,7 @@ textarea {
     border-radius: 40px;
     border: 1px solid rgba(115, 115, 115, 1);
 
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Arima';
     font-weight: 700;
 
@@ -412,7 +412,7 @@ footer {
     display: flex;
     gap: 72px;
 
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 1);
 
