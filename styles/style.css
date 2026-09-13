@@ -320,11 +320,11 @@ nav>a {
     color: rgba(84, 55, 13, 1);
 
     text-align: center;
-    padding: 80px 0;
+    padding: 5rem 0;
 }
 
 .contact-text>p {
-    padding-bottom: 56px;
+    padding-bottom: 3.5rem;
 }
 
 .personal-data {
@@ -350,7 +350,7 @@ nav>a {
     display: flex;
     flex-direction: column;
     text-align: start;
-    padding-top: 49px;
+    padding-top: 3rem;
 }
 
 .name>input,
@@ -358,12 +358,22 @@ nav>a {
 textarea {
     border: none;
     border-bottom: 1px solid rgba(84, 55, 13, 1);
-    padding-top: 36px;
 
     font-family: 'Palanquin';
     font-weight: 500;
     font-size: 1.5rem;
     color: rgba(78, 164, 135, 1);
+}
+
+.name>input,
+.email>input {
+     padding-top: 2.25rem;
+}
+
+textarea {
+    padding-top: 1rem;
+    height: 70px;
+    resize: none;
 }
 
 .privacy {
@@ -375,13 +385,13 @@ textarea {
     font-weight: 400;
     font-size: 0.938rem;
 
-    padding-top: 16px;
-    padding-bottom: 36px;
+    padding-top: 1rem;
+    padding-bottom: 2.25rem;
 }
 
 .privacy>input {
-    height: 18px;
-    width: 18px;
+    height: 1.125rem;
+    width: 1.125rem;
 }
 
 .privacy a {
@@ -442,6 +452,18 @@ footer {
 .footer-social-media-links {
     display: flex;
     gap: 16px;
+    }
+
+@media screen and (max-width: 900px) {
+
+      .privacy {
+        align-items: flex-start;
+        padding-top: 1rem;
+    }
+
+    .privacy > input {
+        margin-top: 4px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -454,8 +476,39 @@ footer {
         display: none;
     }
 
+    .contact-text >p {
+        display: none;
+    }
+
     .tips-section {
         width: 100%;
+    }
+
+    .personal-data {
+        flex-direction: column;
+    }
+
+    .name,
+    .email {
+        width: 100%;
+    }
+
+    .name>input,
+    .email>input,
+    textarea {
+        padding-top: 1rem;
+    }
+
+    .help {
+        padding-top: 1rem;
+    }
+
+    .privacy {
+        align-items:flex-start;
+    }
+
+    .privacy >input {
+        margin-top: 0.4rem;
     }
 
     .footer-links {
