@@ -99,34 +99,6 @@
     display: none;
 }
 
-.text-block-section {
-    margin: 16px 0px;
-}
-
-.text-block-section>p,
-li {
-    font-family: 'Palanquin';
-    font-style: normal;
-    font-weight: 400;
-    font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
-    text-align: left;
-
-    line-height: 1.2;
-}
-
-.text-block-list {
-    padding: 75px 120px;
-}
-
-.text-block-list>p {
-    padding-bottom: 16px;
-
-}
-
-.text-block-list>ol>li {
-    line-height: 1.3;
-}
-
 @media screen and (max-width: 767px) {
     .article-beach-section-slider {
         display: none;
