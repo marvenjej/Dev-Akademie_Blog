@@ -175,6 +175,10 @@ nav>a {
     width: 24px;
 }
 
+.share-vector-mobile {
+    display: none;
+}
+
 .share-button p {
     font-size: 1.5rem;
     font-weight: 700;
@@ -192,7 +196,8 @@ nav>a {
 
 .share-button-wrapper>img {
     top: -18px;
-    right: 270px;
+    right: 50%;
+    transform: translateX(-190px);
     position: absolute;
 }
 
@@ -368,7 +373,7 @@ textarea {
 
 .name>input,
 .email>input {
-     padding-top: 2.25rem;
+    padding-top: 2.25rem;
 }
 
 textarea {
@@ -453,16 +458,16 @@ footer {
 .footer-social-media-links {
     display: flex;
     gap: 16px;
-    }
+}
 
 @media screen and (max-width: 900px) {
 
-      .privacy {
+    .privacy {
         align-items: flex-start;
         padding-top: 1rem;
     }
 
-    .privacy > input {
+    .privacy>input {
         margin-top: 4px;
     }
 }
@@ -477,7 +482,7 @@ footer {
         display: none;
     }
 
-    .contact-text >p {
+    .contact-text>p {
         display: none;
     }
 
@@ -505,11 +510,24 @@ footer {
     }
 
     .privacy {
-        align-items:flex-start;
+        align-items: flex-start;
     }
 
-    .privacy >input {
+    .privacy>input {
         margin-top: 0.4rem;
+    }
+
+    .share-vector {
+        display: none;
+    }
+
+    .share-button-wrapper>.share-vector-mobile {
+        display: block;
+        top: -4px;
+        right: 50%;
+        transform: translateX(-154px);
+        position: absolute;
+
     }
 
     .footer-links {
