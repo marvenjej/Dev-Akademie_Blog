@@ -464,6 +464,10 @@ footer {
     gap: 16px;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 @media screen and (max-width: 900px) {
 
     .privacy {
@@ -481,8 +485,10 @@ footer {
         padding-left: 0;
         justify-content: center;
     }
-     .header-logo{
-    width: 80px;}
+
+    .header-logo {
+        width: 80px;
+    }
 
     nav {
         display: none;
@@ -573,5 +579,24 @@ footer {
 
     .footer-social-media-links a:nth-child(2) img {
         width: 33px;
+    }
+
+    .mobile-nav {
+        display: block;
+        height: 88px;
+
+        background-color: rgba(241, 201, 83, 1);
+    }
+
+    .mobile-nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 16px;
+        padding: 24px 25px;
+    }
+
+    .mobile-nav li {
+        list-style: none;
     }
 }
