@@ -5,7 +5,7 @@ header {
     background-color: var(--primary-bg-color-header-footer);
     height: clamp(70px, 5.83vw + 42.9px, 128px);
     gap: 102px;
-    padding-left: 146px;
+    padding-left: var(--content-padding);
 }
 
 .header-logo {
@@ -27,11 +27,6 @@ nav>a {
 }
 
 .content {
-    --content-padding: max(clamp(1.5rem, -0.21rem + 8.57vw, 7.5rem),
-            /* Rand wächst fließend von 24px auf 120px */
-            calc(50% - 720px)
-            /* deckelt den Inhalt bei sehr breiten Screens auf 1440px */
-        );
     padding-inline: var(--content-padding);
 
 }
@@ -421,7 +416,7 @@ textarea {
 
     color: rgba(115, 115, 115, 1);
 
-   
+
 }
 
 footer {
@@ -433,6 +428,7 @@ footer {
     height: 128px;
     padding-inline: clamp(24px, 9.01vw - 9.8px, 120px);
     margin-top: 64px;
+    padding-left: var(--content-padding);
 }
 
 .footer-links {
