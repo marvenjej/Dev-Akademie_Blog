@@ -420,6 +420,8 @@ textarea {
     font-weight: 700;
 
     color: rgba(115, 115, 115, 1);
+
+   
 }
 
 footer {
@@ -500,6 +502,8 @@ footer {
 
     .tips-section {
         width: 100%;
+        color: rgba(61, 61, 61, 1);
+
     }
 
     .personal-data {
