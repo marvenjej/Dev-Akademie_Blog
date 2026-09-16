@@ -386,7 +386,7 @@ textarea {
 
 .privacy {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 8px;
 
@@ -404,6 +404,20 @@ textarea {
 
 .privacy a {
     color: rgba(78, 164, 135, 1);
+}
+
+ .privacy-wrapper {
+        display: flex;
+        gap: 0.5rem;
+        align-items: flex-start
+    }
+
+ .privacy-wrapper p {
+        text-align: left;
+    }
+
+.privacy-wrapper > input {
+    margin-top: 0.5rem;
 }
 
 .send-button {
@@ -470,18 +484,6 @@ footer {
     display: none;
 }
 
-@media screen and (max-width: 900px) {
-
-    .privacy {
-        align-items: flex-start;
-        padding-top: 1rem;
-    }
-
-    .privacy>input {
-        margin-top: 4px;
-    }
-}
-
 @media screen and (max-width: 767px) {
     header {
         padding-left: 0;
@@ -527,10 +529,6 @@ footer {
 
     .privacy {
         align-items: flex-start;
-    }
-
-    .privacy>input {
-        margin-top: 0.4rem;
     }
 
     .share-vector {
