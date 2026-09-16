@@ -1,5 +1,12 @@
+.imprint-content {
+    max-width: 1440px;
+    margin-inline: auto;
+    padding-inline: clamp(1.5rem, -0.21rem + 8.57vw, 7.5rem);
+}
+
 .impressum-content {
-    margin: 0 calc((100% - 900px) / 2);
+    width: 60%;
+    margin-inline: auto;
     padding: 80px 0 120px;
 }
 
