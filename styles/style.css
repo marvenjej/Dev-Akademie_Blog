@@ -5,7 +5,7 @@ header {
     background-color: var(--primary-bg-color-header-footer);
     height: clamp(70px, 5.83vw + 42.9px, 128px);
     gap: 102px;
-    padding-left: 146px;
+    padding-left: var(--content-padding);
 }
 
 .header-logo {
@@ -27,11 +27,6 @@ nav>a {
 }
 
 .content {
-    --content-padding: max(clamp(1.5rem, -0.21rem + 8.57vw, 7.5rem),
-            /* Rand wächst fließend von 24px auf 120px */
-            calc(50% - 720px)
-            /* deckelt den Inhalt bei sehr breiten Screens auf 1440px */
-        );
     padding-inline: var(--content-padding);
 
 }
@@ -93,12 +88,193 @@ nav>a {
     z-index: 3;
 }
 
+/* Entfernt aus Marcos Slider-Commit: kollidiert mit unserer bestehenden body-Regel
+   in default.css (Zeile 7) und fuehrt mit Arial eine projektfremde Schriftart ein
+   (wir nutzen Arima/Palanquin). Als Kommentar erhalten statt geloescht, siehe Review.
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #402400;
+}
+*/
+
+.landing-page-highlights {
+    width: 100%;
+    max-width: 950px;
+    margin: 60px auto 45px;
+    padding: 0 20px;
+}
+
+ .landing-page-highlights p {
+ max-width: 700px;
+ margin: auto;
+ font-size: 16px;
+ line-height: 1.25;
+ color: #4b2c08;
+ }
+
+/* .intro p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #4b2c08;
+} */
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 353px;
+    overflow: hidden;
+    border-top-right-radius: 70px;
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    transition: transform 0.7s ease-in-out;
+}
+
+.slide {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0, 91, 157, 0.30),
+            rgba(0, 91, 157, 0.05) 55%,
+            rgba(0, 140, 180, 0.05)
+        );
+}
+
+.slide:nth-child(1) {
+    background-image: url("../assets/img/beach.jpg");
+}
+
+.slide:nth-child(2) {
+    background-image: url(../assets/img/beach.jpg);
+}
+
+.slide:nth-child(3) {
+    background-image: url(../assets/img/beach.jpg);
+}
+
+.slide:nth-child(4) {
+    background-image: url(../assets/img/beach.jpg);
+}
+
+.slide-content {
+    position: absolute;
+    z-index: 2;
+    top: 36px;
+    left: 25px;
+    width: calc(100% - 210px);
+    max-width: 585px;
+    padding: 12px 15px 10px;
+    color: #fff;
+    border-left: 1px solid rgba(255, 255, 255, 0.45);
+    border-right: 1px solid rgba(255, 255, 255, 0.45);
+    background: rgba(110, 156, 192, 0.40);
+}
+
+.slide-content h2 {
+    font-size: 31px;
+    line-height: 1.02;
+    font-weight: 800;
+    margin-bottom: 7px;
+}
+
+.slide-content p {
+    font-size: 18px;
+    line-height: 1.15;
+}
+
+.slider-dots {
+    position: absolute;
+    z-index: 10;
+    bottom: 29px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* TODO (Marco): kein JavaScript einsetzen. Der aktive Slide-Wechsel (.dot.active,
+   Verschiebung von .slides) muss noch rein per HTML/CSS umgesetzt werden,
+   z.B. Radio-Buttons + :checked Aktuell ohne Funktion. */
+.dot {
+    width: 19px;
+    height: 19px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        width 0.3s ease;
+}
+
+.dot:hover {
+    transform: scale(1.1);
+}
+
+.dot.active {
+    width: 26px;
+    background: #f5c13b;
+    border-radius: 50%;
+}
+
 .hero-turkey-circle {
     position: absolute;
     top: 301px;
     left: 423px;
     z-index: 4;
+    width: 182px;
+    height: 182px;
+}
 
+.hero-turkey-circle-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-turkey-circle-text {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 83%;
+    height: auto;
+    animation: spin-turkey-circle 13s linear infinite;
+}
+
+.hero-turkey-circle-flag {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 42%;
+    height: auto;
+}
+
+@keyframes spin-turkey-circle {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .tips-container {
@@ -203,7 +379,7 @@ nav>a {
     position: absolute;
 }
 
-.lading-page-headline {
+.landing-page-headline {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,7 +387,7 @@ nav>a {
     gap: 16px;
 }
 
-.lading-page-headline h2 {
+.landing-page-headline h2 {
     color: rgba(78, 164, 135, 1);
     font-size: clamp(2.5rem, 2.2857rem + 1.0714vw, 3.25rem);
     font-family: 'Arima';
@@ -435,7 +611,7 @@ textarea {
 
     color: rgba(115, 115, 115, 1);
 
-   
+
 }
 
 footer {
@@ -447,6 +623,7 @@ footer {
     height: 128px;
     padding-inline: clamp(24px, 9.01vw - 9.8px, 120px);
     margin-top: 64px;
+    padding-left: var(--content-padding);
 }
 
 .footer-links {
@@ -549,8 +726,10 @@ footer {
 
     }
 
-    .footer {
+    footer {
+        height: auto;
         margin-top: 240px;
+        padding-block: 24px 112px;
     }
 
     .footer-links {
@@ -585,8 +764,15 @@ footer {
     }
 
     .mobile-nav {
-        display: block;
+        display: flex;
+        align-items: center;
         height: 88px;
+
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
 
         background-color: rgba(241, 201, 83, 1);
     }
@@ -596,7 +782,8 @@ footer {
         align-items: center;
         justify-content: space-evenly;
         gap: 16px;
-        padding: 24px 25px;
+        width: 100%;
+        padding: 0 25px;
     }
 
     .mobile-nav li {
