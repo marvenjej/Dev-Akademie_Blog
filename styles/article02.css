@@ -25,44 +25,6 @@ video {
     overflow: hidden;
 }
 
-.text-main {
-    font-family: 'Palanquin';
-    font-style: normal;
-    font-weight: 400;
-    font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
-
-    line-height: 1.2; /* TODO: Hier sollten wir nochmal gemeinsam draufschauen*/
-}
-
-.text-list {
-    font-family: 'Palanquin';
-    font-style: normal;
-    font-weight: 400;
-    font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
-    padding: 1.5rem 0rem;
-
-    line-height: 1.2;
-}
-
 ul {
     margin-top: 1.5rem;
-}
-
-.text-conclusion {
-    font-family: 'Palanquin';
-    font-style: normal;
-    font-weight: 400;
-    font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
-    line-height: 1.2;
-    
-    padding-bottom: clamp(3rem, 0.064rem + 8.263vw, 7.5rem);
-}
-
-@media screen and (max-width: 767px) {
-    .text-introduction,
-    .text-main,
-    .text-list,
-    .text-conclusion {
-        color: rgba(84, 55, 13, 1);
-    }
 }

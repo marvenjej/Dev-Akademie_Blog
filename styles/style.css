@@ -287,108 +287,6 @@ body {
     }
 }
 
-.tips-container {
-    position: relative;
-    padding: 25px 0px;
-}
-
-.tips-img {
-    position: absolute;
-    top: -45px;
-    left: 0;
-    z-index: 10;
-}
-
-.tips-section {
-    background-color: rgba(78, 164, 135, 0.2);
-    padding: 26px 16px 24px 16px;
-    border-radius: 30px;
-
-    width: 90%;
-    margin: 0 auto;
-
-    font-family: 'Palanquin';
-    font-style: normal;
-    font-weight: 400;
-    font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
-    line-height: 1.2;
-}
-
-.tips-link {
-    color: rgba(78, 164, 135, 1);
-
-}
-
-
-
-.share-button-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    /* margin: 32px; */
-}
-
-.share-button-section>p {
-    flex-wrap: wrap;
-
-    font-size: clamp(1.125rem, 1.0179rem + 0.5357vw, 1.5rem);
-    font-family: Arima;
-    font-weight: 500;
-    text-align: center;
-    line-height: 1.3;
-
-    color: rgba(84, 55, 13, 1);
-    width: 100%;
-    max-width: 480px;
-    padding: 10px;
-}
-
-
-
-.share-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-top: 32px;
-    width: 160px;
-    height: 50px;
-    background-color: rgba(78, 164, 135, 1);
-    gap: 10px;
-    border-radius: 40px;
-}
-
-.share-button img {
-    width: 24px;
-}
-
-.share-vector-mobile {
-    display: none;
-}
-
-.share-button p {
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-family: Arima;
-    color: rgba(241, 201, 83, 1);
-}
-
-.share-button-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: relative;
-}
-
-.share-button-wrapper>img {
-    top: -18px;
-    right: 50%;
-    transform: translateX(-190px);
-    position: absolute;
-}
 
 .landing-page-headline {
     display: flex;
@@ -771,23 +669,6 @@ footer {
 
     .privacy {
         align-items: flex-start;
-    }
-
-    .share-vector {
-        display: none;
-    }
-
-    .share-button-section {
-        margin-bottom: 64px;
-    }
-
-    .share-button-wrapper>.share-vector-mobile {
-        display: block;
-        top: -4px;
-        right: 50%;
-        transform: translateX(max(-154px, 56px - 50vw));
-        position: absolute;
-
     }
 
     footer {
