@@ -611,8 +611,18 @@ textarea {
     font-weight: 700;
 
     color: rgba(115, 115, 115, 1);
+    background-color: white;
+}
 
+.contact-form:has(.privacy input:checked) .send-button {
+    background-color: rgb(78, 164, 135);
+    color: rgba(241, 201, 83, 1);
+    border: 1px solid rgb(78, 164, 135);
+}
 
+.contact-form:has(.privacy input:checked) .send-button:hover {
+    box-shadow: 0 4px 8px rgba(78, 164, 135, 0.5);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 footer {
