@@ -633,7 +633,7 @@ footer {
     background-color: var(--primary-bg-color-header-footer);
     height: 128px;
     padding-inline: clamp(24px, 9.01vw - 9.8px, 120px);
-    margin-top: 80px;
+    margin-top: clamp(5rem, 10.3571rem - 5.9524vw, 7.5rem);
     padding-left: var(--content-padding);
 }
 
@@ -739,7 +739,6 @@ footer {
 
     footer {
         height: auto;
-        margin-top: 240px;
         padding-block: 24px 112px;
     }
 

@@ -4,7 +4,6 @@
     flex-direction: column;
     align-items: center;
 
-    margin-bottom: 100px;
     gap: 64px
 }
 
@@ -13,7 +12,8 @@
     font-size: clamp(1.25rem, 1.0357rem + 1.0714vw, 2rem);
     font-weight: 600;
     color: rgba(84, 55, 13, 1);
-    padding-bottom: 120px;
+    padding-bottom: clamp(1rem, -6.4286rem + 15.4762vw, 7.5rem);
+
 
 }
 
@@ -107,7 +107,7 @@
 }
 
 .main-text-article01 {
-    margin: 88px 0px;
+    margin: clamp(2.75rem, -0.3929rem + 6.5476vw, 5.5rem) 0px;
 }
 
 .text-conclusion {
@@ -119,7 +119,7 @@
 }
 
 .text-list-article01 {
-    margin: 88px 100px 120px 100px;
+    margin: clamp(2rem, -2rem + 8.3333vw, 5.5rem) clamp(0rem, -7.1429rem + 14.881vw, 6.25rem) clamp(4rem, 8.3333vw, 7.5rem) clamp(0rem, -7.1429rem + 14.881vw, 6.25rem);
 }
 
 ol {
@@ -132,9 +132,15 @@ ol {
         display: none;
     }
 
-    .article-beach-section-slider-mobile {
-        margin-top: 50px;
+    .tips-container {
+        padding-bottom: 0;
+    }
 
+    .text-conclusion.main-text-article01 {
+        margin-top: 32px;
+    }
+
+    .article-beach-section-slider-mobile {
         --card-w: clamp(195px, calc(125px + 21.92vw), 293px);
         --gap: 4vw;
         --step: calc(var(--card-w) + var(--gap));
@@ -225,5 +231,12 @@ ol {
     #beach-slide5:checked~.slider-mobile-container img:nth-of-type(4) {
         transform: perspective(80vw) rotateY(25deg);
         transform-origin: right center;
+    }
+
+    .text-introduction,
+    .text-main,
+    .text-list,
+    .text-conclusion {
+        color: rgba(84, 55, 13, 1);
     }
 }
