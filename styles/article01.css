@@ -37,7 +37,7 @@
     border-radius: 16px;
     overflow: hidden;
 
-     box-shadow: 0px 1px 1px rgba(3, 7, 18, 0.02),
+    box-shadow: 0px 1px 1px rgba(3, 7, 18, 0.02),
         0px 5px 4px rgba(3, 7, 18, 0.03),
         0px 12px 9px rgba(3, 7, 18, 0.05),
         0px 20px 15px rgba(3, 7, 18, 0.06),
@@ -105,6 +105,27 @@
 .article-beach-section-slider-mobile input[type="radio"] {
     display: none;
 }
+
+.main-text-article01 {
+    margin: 88px 0px;
+}
+
+.text-conclusion {
+    padding: 0;
+}
+
+.text-list {
+    padding: 0;
+}
+
+.text-list-article01 {
+    margin: 88px 100px 120px 100px;
+}
+
+ol {
+    margin-top: 1.5rem;
+}
+
 
 @media screen and (max-width: 767px) {
     .article-beach-section-slider {

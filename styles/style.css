@@ -301,6 +301,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
+    line-height: 1.2;
 }
 
 .tips-link {
@@ -622,7 +623,7 @@ footer {
     background-color: var(--primary-bg-color-header-footer);
     height: 128px;
     padding-inline: clamp(24px, 9.01vw - 9.8px, 120px);
-    margin-top: 64px;
+    margin-top: 80px;
     padding-left: var(--content-padding);
 }
 

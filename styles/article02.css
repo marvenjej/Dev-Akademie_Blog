@@ -41,7 +41,7 @@ video {
     font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
     padding: 1.5rem 0rem;
 
-    line-height: 1.3;
+    line-height: 1.2;
 }
 
 ul {
