@@ -153,6 +153,7 @@
 .tips-container {
     position: relative;
     padding: 25px 0px;
+    margin: 2rem;
 }
 
 .tips-img {
@@ -164,7 +165,7 @@
 
 .tips-section {
     background-color: rgba(78, 164, 135, 0.2);
-    padding: 26px 16px 24px 16px;
+    padding: 31px 16px 24px 16px;
     border-radius: 30px;
 
     width: 90%;
