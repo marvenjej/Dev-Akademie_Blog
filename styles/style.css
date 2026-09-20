@@ -503,6 +503,15 @@ textarea {
 
 .privacy-wrapper>input {
     margin-top: 0.5rem;
+
+    width: 18px;
+    height: 18px;
+    appearance: none;
+    border: 1px solid rgba(84, 55, 13, 1);
+}
+
+.privacy-wrapper > input:hover {
+    background-color: rgba(241, 201, 83, 1);
 }
 
 .send-button {
@@ -512,25 +521,47 @@ textarea {
 
     padding: 9px 40px;
     border-radius: 40px;
-    border: 1px solid rgba(115, 115, 115, 1);
 
     font-size: 1.5rem;
     font-family: 'Arima';
     font-weight: 700;
 
-    color: rgba(115, 115, 115, 1);
-    background-color: white;
-}
-
-.contact-form:has(.privacy input:checked) .send-button {
     background-color: rgb(78, 164, 135);
     color: rgba(241, 201, 83, 1);
     border: 1px solid rgb(78, 164, 135);
 }
 
-.contact-form:has(.privacy input:checked) .send-button:hover {
+.send-button:hover {
     box-shadow: 0 4px 8px rgba(78, 164, 135, 0.5);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.privacy-wrapper > input:checked {
+    background-color: rgb(78, 164, 135);
+}
+
+.privacy-wrapper > input:checked::after {
+    content: "";
+    display: block;
+    border: solid rgba(241, 201, 83, 1);
+    border-width: 0 2px 2px 0;
+
+    width: 5px;
+    height: 9px;
+
+    transform: translateX(4px) rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form:has(.privacy-wrapper > input:user-invalid) .send-button {
+    background-color: white;
+    color: rgba(115, 115, 115, 1);
+    border: 1px solid rgba(115, 115, 115, 1);
+
+    box-shadow: none;
+    text-shadow: none;
 }
 
 footer {
