@@ -566,10 +566,12 @@ textarea {
 }
 
 .privacy-wrapper>input {
-    margin-top: 0.5rem;
+    margin-top: 0.4rem;
 
-    width: 18px;
-    height: 18px;
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+
     appearance: none;
     border: 1px solid rgba(84, 55, 13, 1);
 }
@@ -698,6 +700,53 @@ footer {
         color: rgba(84, 55, 13, 1);
 
 
+    }
+
+    .landing-page-highlights > p {
+    display: none;
+    }
+
+     .slider {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 335 / 533;
+        max-width: none;
+        margin: 2rem auto 0;
+        border-top-right-radius: 70px;
+    }
+
+    .slide-content {
+        top: 3.375rem;
+        left: 1rem;
+        width: calc(100% - 2rem);
+        max-width: none;
+        padding: 0.75rem 1rem;
+    }
+
+    .slide-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .slide-content p {
+        font-size: 1rem;
+        line-height: 110%;
+    }
+
+    .slider-dots {
+        bottom: 29px;
+        gap: 14px;
+    }
+
+    .dot {
+        width: 20px;
+        height: 20px;
+    }
+
+    #slide-1:checked ~ .slider-dots label[for="slide-1"],
+    #slide-2:checked ~ .slider-dots label[for="slide-2"],
+    #slide-3:checked ~ .slider-dots label[for="slide-3"],
+    #slide-4:checked ~ .slider-dots label[for="slide-4"] {
+        width: 32px;
     }
 
     .personal-data {
