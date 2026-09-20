@@ -1,6 +1,6 @@
 :root {
 
 --primary-bg-color-header-footer: rgba(78, 164, 135, 1);
---content-padding: max(clamp(1.5rem, -0.21rem + 8.57vw, 7.5rem), calc(50% - 720px));
+--content-padding: max(clamp(1.5rem, -0.21rem + 8.57vw, 7.5rem), calc(50% - 600px));
 
 }
