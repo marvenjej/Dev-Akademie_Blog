@@ -136,7 +136,6 @@
     font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
 
     line-height: 1.2;
-    /* TODO: Hier sollten wir nochmal gemeinsam draufschauen*/
 }
 
 .text-list {
@@ -190,8 +189,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    /* margin: 32px; */
 }
 
 .share-button-section>p {

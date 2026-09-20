@@ -100,16 +100,6 @@ nav>a {
     z-index: 3;
 }
 
-/* Entfernt aus Marcos Slider-Commit: kollidiert mit unserer bestehenden body-Regel
-   in default.css (Zeile 7) und fuehrt mit Arial eine projektfremde Schriftart ein
-   (wir nutzen Arima/Palanquin). Als Kommentar erhalten statt geloescht, siehe Review.
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #fff;
-    color: #402400;
-}
-*/
-
 .landing-page-highlights {
     width: 100%;
     max-width: 950px;
@@ -124,14 +114,6 @@ body {
     line-height: 1.25;
     color: #4b2c08;
 }
-
-/* .intro p {
-    max-width: 700px;
-    margin: auto;
-    font-size: 16px;
-    line-height: 1.25;
-    color: #4b2c08;
-} */
 
 
 .slider {
@@ -581,49 +563,6 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-    .landing-page-hero {
-        height: 480px;
-    }
-
-    .hero-curve-img {
-        display: none;
-    }
-
-    .hero-curve-img-mobile {
-        display: block;
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        width: 230px;
-        height: auto;
-    }
-
-    .hero-background-img {
-        display: none;
-    }
-
-    .hero-background-img-mobile {
-        display: block;
-        z-index: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: 50%;
-        position: absolute;
-    }
-
-    .hero-headline {
-        display: none;
-    }
-
-    .hero-turkey-circle {
-        top: 130px;
-        left: 90px;
-        width: 150px;
-        height: 150px;
-    }
-
     header {
         padding-left: 0;
         justify-content: center;
@@ -732,5 +671,51 @@ footer {
 
     .mobile-nav li {
         list-style: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .landing-page-hero {
+        height: 480px;
+    }
+
+    .hero-background-img {
+        height: 100%;
+        display: none;
+    }
+
+    .hero-background-img-mobile {
+        display: block;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50%;
+        position: absolute;
+    }
+
+    .hero-curve-img {
+        display: none;
+    }
+
+    .hero-curve-img-mobile {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 230px;
+        height: auto;
+    }
+
+    .hero-headline {
+        display: none;
+    }
+
+    .hero-turkey-circle {
+        top: 130px;
+        left: 90px;
+        width: 150px;
+        height: 150px;
     }
 }
