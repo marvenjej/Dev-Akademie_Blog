@@ -72,7 +72,6 @@ nav>a:nth-child(3)::after {
 
 }
 
-
 .landing-page-hero {
     background-color: rgba(241, 201, 83, 1);
     height: clamp(335px, 129.29px + 26.7857vw, 515px);
@@ -143,24 +142,35 @@ nav>a:nth-child(3)::after {
 
 .landing-page-highlights {
     width: 100%;
-    max-width: 950px;
     margin: 60px auto 45px;
-    padding: 0 20px;
+
 }
 
 .landing-page-highlights p {
-    max-width: 700px;
-    margin: auto;
-    font-size: 16px;
-    line-height: 1.25;
-    color: #4b2c08;
+    max-width: 85%;
+    font-size: 1.5rem;
+    color: rgba(84, 55, 13, 1);
+    font-family: Palanquin;
+    line-height: 1.2;
+    margin: 2rem auto 4rem auto;
+
 }
 
+.slide-content p {
+    max-width: none;
+    margin: 0.5rem 0 0;
+    font-family: "Palanquin", sans-serif;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 110%;
+    letter-spacing: 0;
+    color: white;
+}
 
 .slider {
     position: relative;
     width: 100%;
-    height: 353px;
+    height: 533px;
     overflow: hidden;
     border-top-right-radius: 70px;
 }
@@ -190,6 +200,7 @@ nav>a:nth-child(3)::after {
             rgba(0, 91, 157, 0.30),
             rgba(0, 91, 157, 0.05) 55%,
             rgba(0, 140, 180, 0.05));
+    pointer-events: none;
 }
 
 .slide:nth-child(1) {
@@ -197,41 +208,58 @@ nav>a:nth-child(3)::after {
 }
 
 .slide:nth-child(2) {
-    background-image: url(../assets/img/beach.jpg);
+    background-image: url("../assets/img/scandinavia.jpg");
 }
 
 .slide:nth-child(3) {
-    background-image: url(../assets/img/beach.jpg);
+    background-image: url("../assets/img/sanctuary.jpg");
 }
 
 .slide:nth-child(4) {
-    background-image: url(../assets/img/beach.jpg);
+    background-image: url("../assets/img/fuji.jpg");
+}
+
+#slide-1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide-2:checked ~ .slides {
+    transform: translateX(-25%);
+}
+
+#slide-3:checked ~ .slides {
+    transform: translateX(-50%);
+}
+
+#slide-4:checked ~ .slides {
+    transform: translateX(-75%);
+}
+
+.slider > input {
+    display: none;
 }
 
 .slide-content {
     position: absolute;
     z-index: 2;
-    top: 36px;
-    left: 25px;
-    width: calc(100% - 210px);
-    max-width: 585px;
-    padding: 12px 15px 10px;
-    color: #fff;
+    top: 3.375rem;
+    left: 2.375rem;
+    width: 55.0625rem;
+    max-width: calc(100% - 4.75rem);
+    padding: 1rem 1.5rem;
+    color: white;
     border-left: 1px solid rgba(255, 255, 255, 0.45);
     border-right: 1px solid rgba(255, 255, 255, 0.45);
     background: rgba(110, 156, 192, 0.40);
 }
 
 .slide-content h2 {
-    font-size: 31px;
-    line-height: 1.02;
-    font-weight: 800;
-    margin-bottom: 7px;
-}
-
-.slide-content p {
-    font-size: 18px;
-    line-height: 1.15;
+    margin: 0;
+    font-family: "Palanquin Dark";
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 100%;
+    letter-spacing: 0;
 }
 
 .slider-dots {
@@ -242,15 +270,12 @@ nav>a:nth-child(3)::after {
     transform: translateX(-50%);
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 22px;
 }
 
-/* TODO (Marco): kein JavaScript einsetzen. Der aktive Slide-Wechsel (.dot.active,
-   Verschiebung von .slides) muss noch rein per HTML/CSS umgesetzt werden,
-   z.B. Radio-Buttons + :checked Aktuell ohne Funktion. */
 .dot {
-    width: 19px;
-    height: 19px;
+    width: 28px;
+    height: 28px;
     border: none;
     border-radius: 50%;
     background: #fff;
@@ -261,14 +286,25 @@ nav>a:nth-child(3)::after {
         width 0.3s ease;
 }
 
-.dot:hover {
-    transform: scale(1.1);
+#slide-1:checked ~ .slider-dots label[for="slide-1"],
+#slide-2:checked ~ .slider-dots label[for="slide-2"],
+#slide-3:checked ~ .slider-dots label[for="slide-3"],
+#slide-4:checked ~ .slider-dots label[for="slide-4"] {
+    background: rgba(241, 201, 83, 1);
+    width: 40px;
+    border-radius: 20px;
 }
 
-.dot.active {
-    width: 26px;
-    background: #f5c13b;
-    border-radius: 50%;
+.slide-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.dot:hover {
+    transform: scale(1.1);
 }
 
 .hero-turkey-circle {

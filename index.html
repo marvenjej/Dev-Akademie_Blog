@@ -61,72 +61,75 @@
             </p>
 
             <section class="slider">
+
+                <input type="radio" name="slider" id="slide-1" checked>
+                <input type="radio" name="slider" id="slide-2">
+                <input type="radio" name="slider" id="slide-3">
+                <input type="radio" name="slider" id="slide-4">
+
+                <div class="slider-dots">
+                    <label for="slide-1" class="dot"></label>
+                    <label for="slide-2" class="dot"></label>
+                    <label for="slide-3" class="dot"></label>
+                    <label for="slide-4" class="dot"></label>
+                </div>
+
                 <div class="slides" id="slides">
+
                     <article class="slide">
+                        <a href="article01.html" class="slide-link">
                         <div class="slide-content">
                             <h2>
-                                Die atemberaubendsten Strände <br>
-                                der Welt
+                                Die atemberaubendsten <br>
+                                Strände der Welt
                             </h2>
                             <p>
                                 Von puderweichem, weißem Sand bis hin zu dramatischen Küsten, die von türkisfarbenen
                                 Wellen umspült werden – diese Strände sind mehr als nur Reiseziele. Sie sind ein Gefühl.
                             </p>
                         </div>
+                        </a>
+                    </article>
+                    <article class="slide">
+                        <a href="article02.html" class="slide-link">
+                        <div class="slide-content">
+                            <h2>
+                                Kopenhagen in 3 Tagen: <br>
+                                Große Erlebnisse, kleines Budget
+                            </h2>
+                            <p>
+                                Entdecke Kopenhagen, wo historischer Charme auf modernes Design, lebendige Fahrradkultur und entspanntes Leben am Wasser trifft. 
+                                Erlebe gemütliche Cafés, innovative Küche und die wunderbar entspannte Atmosphäre der Stadt.
+                            </p>
+                        </div>
+                        </a>
                     </article>
                     <article class="slide">
                         <div class="slide-content">
                             <h2>
-                                Discover Asia’s<br>
-                                Vibrant Cultures
+                                Skandinaviens<br>
+                                malerische Landschaften
                             </h2>
                             <p>
-                                Explore ancient traditions, colorful markets and
-                                unforgettable flavors in some of the world's most
-                                fascinating destinations.
+                                Von majestätischen Bergen bis hin zu friedlichen Fjorden
+                                bietet Skandinavien atemberaubende Landschaften und
+                                unvergessliche Abenteuer.
                             </p>
                         </div>
                     </article>
                     <article class="slide">
                         <div class="slide-content">
                             <h2>
-                                Scandinavia’s<br>
-                                Serene Landscapes
+                                Karibische Inselträume
                             </h2>
                             <p>
-                                From majestic mountains to peaceful fjords,
-                                Scandinavia offers breathtaking scenery and
-                                unforgettable adventures.
-                            </p>
-                        </div>
-                    </article>
-                    <article class="slide">
-                        <div class="slide-content">
-                            <h2>
-                                Caribbean<br>
-                                Island Dreams
-                            </h2>
-                            <p>
-                                Warm sunshine, crystal-clear water and endless
-                                horizons make the Caribbean a true paradise.
+                                Warmer Sonnenschein, kristallklares Wasser und endlose
+                                Horizonte machen die Karibik zu einem wahren Paradies.
                             </p>
                         </div>
                     </article>
                 </div>
-                <div class="slider-dots">
-                    <button class="dot active" data-slide="0" aria-label="Slide 1">
-                    </button>
-                    <button class="dot" data-slide="1" aria-label="Slide 2">
-                    </button>
-                    <button class="dot" data-slide="2" aria-label="Slide 3">
-                    </button>
-                    <button class="dot" data-slide="3" aria-label="Slide 4">
-                    </button>
-                </div>
-                <!-- TODO (Marco): Slide-Wechsel darf laut Team-Absprache nicht per JavaScript erfolgen.
-                     Bitte die Umschaltung der aktiven Slide rein per HTML/CSS umsetzen
-                     (z.B. Radio-Buttons + :checked - die .dot-Buttons
-                     sind aktuell nur Deko und ohne Funktion. -->
+
             </section>
         </section>
 
