@@ -491,6 +491,11 @@ textarea {
     color: rgba(78, 164, 135, 1);
 }
 
+.privacy a:hover {
+    font-family: 'Palanquin Dark';
+    font-weight: 400;
+}
+
 .privacy-wrapper {
     display: flex;
     gap: 0.5rem;
