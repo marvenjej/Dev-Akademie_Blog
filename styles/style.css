@@ -173,6 +173,8 @@ nav>a:nth-child(3)::after {
     height: 533px;
     overflow: hidden;
     border-top-right-radius: 70px;
+
+    margin-bottom: 5rem;
 }
 
 .slides {
