@@ -109,7 +109,7 @@
     font-weight: 400;
 }
 
-.author-section-author>p {
+.author-section-text>p {
     font-family: Palanquin;
     font-size: 16px;
     font-weight: 400;
@@ -277,11 +277,44 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+
+    .author-section-author {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .author-section-author img {
+        flex-shrink: 0;
+    }
+
+    .author-section-text {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .author-name {
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .author-section-text>p {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 699px) {
 
     .author-section-author {
         width: clamp(345px, 3.969rem + 75.064vw, 640px);
     }
+}
+
+@media screen and (max-width: 767px) {
 
     .text-introduction,
     .text-main,
