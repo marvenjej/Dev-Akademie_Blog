@@ -221,23 +221,23 @@ nav>a:nth-child(3)::after {
     background-image: url("../assets/img/fuji.jpg");
 }
 
-#slide-1:checked ~ .slides {
+#slide-1:checked~.slides {
     transform: translateX(0);
 }
 
-#slide-2:checked ~ .slides {
+#slide-2:checked~.slides {
     transform: translateX(-25%);
 }
 
-#slide-3:checked ~ .slides {
+#slide-3:checked~.slides {
     transform: translateX(-50%);
 }
 
-#slide-4:checked ~ .slides {
+#slide-4:checked~.slides {
     transform: translateX(-75%);
 }
 
-.slider > input {
+.slider>input {
     display: none;
 }
 
@@ -288,10 +288,10 @@ nav>a:nth-child(3)::after {
         width 0.3s ease;
 }
 
-#slide-1:checked ~ .slider-dots label[for="slide-1"],
-#slide-2:checked ~ .slider-dots label[for="slide-2"],
-#slide-3:checked ~ .slider-dots label[for="slide-3"],
-#slide-4:checked ~ .slider-dots label[for="slide-4"] {
+#slide-1:checked~.slider-dots label[for="slide-1"],
+#slide-2:checked~.slider-dots label[for="slide-2"],
+#slide-3:checked~.slider-dots label[for="slide-3"],
+#slide-4:checked~.slider-dots label[for="slide-4"] {
     background: rgba(241, 201, 83, 1);
     width: 40px;
     border-radius: 20px;
@@ -578,7 +578,7 @@ textarea {
     border: 1px solid rgba(84, 55, 13, 1);
 }
 
-.privacy-wrapper > input:hover {
+.privacy-wrapper>input:hover {
     background-color: rgba(241, 201, 83, 1);
 }
 
@@ -604,11 +604,11 @@ textarea {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.privacy-wrapper > input:checked {
+.privacy-wrapper>input:checked {
     background-color: rgb(78, 164, 135);
 }
 
-.privacy-wrapper > input:checked::after {
+.privacy-wrapper>input:checked::after {
     content: "";
     display: block;
     border: solid rgba(241, 201, 83, 1);
@@ -704,11 +704,11 @@ footer {
 
     }
 
-    .landing-page-highlights > p {
-    display: none;
+    .landing-page-highlights>p {
+        display: none;
     }
 
-     .slider {
+    .slider {
         width: 100%;
         height: auto;
         aspect-ratio: 335 / 533;
@@ -732,6 +732,11 @@ footer {
     .slide-content p {
         font-size: 1rem;
         line-height: 110%;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+
     }
 
     .slider-dots {
@@ -744,10 +749,10 @@ footer {
         height: 20px;
     }
 
-    #slide-1:checked ~ .slider-dots label[for="slide-1"],
-    #slide-2:checked ~ .slider-dots label[for="slide-2"],
-    #slide-3:checked ~ .slider-dots label[for="slide-3"],
-    #slide-4:checked ~ .slider-dots label[for="slide-4"] {
+    #slide-1:checked~.slider-dots label[for="slide-1"],
+    #slide-2:checked~.slider-dots label[for="slide-2"],
+    #slide-3:checked~.slider-dots label[for="slide-3"],
+    #slide-4:checked~.slider-dots label[for="slide-4"] {
         width: 32px;
     }
 
