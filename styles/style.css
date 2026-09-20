@@ -31,7 +31,7 @@ nav>a::after {
     content: "";
     position: absolute;
     left: 51%;
-    bottom: 3px;
+    bottom: 4px;
     background-repeat: no-repeat;
     background-size: contain;
     opacity: 0;
@@ -62,10 +62,6 @@ nav>a:nth-child(3)::after {
     height: 11px;
     background-image: url("../assets/icons/contact-hover.svg");
 }
-
-/* nav>a:visited{
-    color: rgba(241, 201, 83, 1);
-} */
 
 .content {
     padding-inline: var(--content-padding);
