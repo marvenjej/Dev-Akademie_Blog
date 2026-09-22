@@ -521,7 +521,7 @@ textarea {
 }
 
 textarea {
-    padding-top: 1rem;
+    padding-top: 2.25rem;
     height: 70px;
     resize: none;
 }
@@ -546,11 +546,11 @@ textarea {
 
 .privacy a {
     color: rgba(78, 164, 135, 1);
+    display: inline-block;
 }
 
 .privacy a:hover {
-    font-family: 'Palanquin Dark';
-    font-weight: 400;
+    transform: scaleX(1.02);
 }
 
 .privacy-wrapper {
