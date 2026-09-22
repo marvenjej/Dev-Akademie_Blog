@@ -306,7 +306,8 @@
 @media screen and (max-width: 699px) {
 
     .author-section-author {
-        width: clamp(345px, 3.969rem + 75.064vw, 640px);
+        /* width: clamp(345px, 3.969rem + 75.064vw, 640px); */
+        width: 100%;
     }
 }
 
