@@ -4,3 +4,9 @@
 --content-padding: max(clamp(1.5rem, -0.21rem + 8.57vw, 7.5rem), calc(50% - 600px));
 
 }
+
+@media screen and (max-width: 767px) {
+    :root {
+        --content-padding: 1rem;
+    }
+}
