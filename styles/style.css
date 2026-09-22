@@ -637,9 +637,8 @@ footer {
 
     background-color: var(--primary-bg-color-header-footer);
     height: 128px;
-    padding-inline: clamp(24px, 9.01vw - 9.8px, 120px);
     margin-top: clamp(5rem, 10.3571rem - 5.9524vw, 7.5rem);
-    padding-left: var(--content-padding);
+    padding-inline: var(--content-padding);
 }
 
 .footer-links {
