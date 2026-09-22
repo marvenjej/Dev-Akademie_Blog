@@ -90,12 +90,10 @@
 
 .article-beach-section-slider_element:hover~.article-beach-section-slider_element {
     transform: perspective(var(--card-w)) rotateY(-20deg) translateX(calc(var(--card-w) * 0.52));
-    filter: brightness(0.85);
 }
 
 .article-beach-section-slider_element:has(~ .article-beach-section-slider_element:hover) {
     transform: perspective(var(--card-w)) rotateY(20deg) translateX(calc(var(--card-w) * -0.52));
-    filter: brightness(0.85);
 }
 
 .article-beach-section-slider-mobile {
