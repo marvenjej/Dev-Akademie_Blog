@@ -521,8 +521,8 @@ textarea {
 }
 
 textarea {
-    padding-top: 2.25rem;
-    height: 70px;
+    height: 82px;
+    padding: 2.25rem 2px 1px;
     resize: none;
 }
 
@@ -537,6 +537,8 @@ textarea {
 
     padding-top: 1rem;
     padding-bottom: 2.25rem;
+
+    font-size: 1rem;
 }
 
 .privacy>input {
