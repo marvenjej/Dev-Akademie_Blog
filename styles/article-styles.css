@@ -182,8 +182,6 @@
 
 }
 
-
-
 .share-button-section {
     display: flex;
     justify-content: center;
@@ -205,8 +203,6 @@
     max-width: 480px;
     padding: 10px;
 }
-
-
 
 .share-button {
     display: flex;
@@ -326,6 +322,7 @@
     .tips-section {
         width: 100%;
         color: rgba(84, 55, 13, 1);
+        margin: 0rem;
     }
 
     .share-vector {
@@ -343,5 +340,28 @@
         transform: translateX(max(-154px, 56px - 50vw));
         position: absolute;
 
+    }
+
+    .tips-container {
+        margin: 2rem 0;
+    }
+
+    .tips-section {
+        width: 100%;
+    }
+
+     .tips-img {
+        top: -35px;
+        left: 0;
+    }
+
+    .tips-img img {
+        width: 160px;
+        height: auto;
+    }
+
+    .tips-section ol {
+        padding-left: 1rem;
+        margin: 0;
     }
 }
