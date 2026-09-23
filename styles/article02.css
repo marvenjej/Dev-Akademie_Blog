@@ -10,6 +10,7 @@ video {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: inherit;
 }
 
 .video-section {
@@ -22,7 +23,6 @@ video {
 .video-container {
     border-radius: clamp(1.5rem, 3vw, 3.3125rem);
     width: 100%;
-    overflow: hidden;
 }
 
 ul {
