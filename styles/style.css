@@ -71,7 +71,8 @@ nav>a:nth-child(3)::after {
 .landing-page-hero {
     background-color: rgba(241, 201, 83, 1);
     height: clamp(335px, 129.29px + 26.7857vw, 515px);
-    width: min(100%, 1440px);
+    width: 100vw;
+    max-width: 1440px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -725,7 +726,6 @@ footer {
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
-
     }
 
     .slider-dots {
