@@ -71,11 +71,10 @@ nav>a:nth-child(3)::after {
 .landing-page-hero {
     background-color: rgba(241, 201, 83, 1);
     height: clamp(335px, 129.29px + 26.7857vw, 515px);
-    width: 100vw;
+    width: 100%;
     max-width: 1440px;
+    margin-inline: auto;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .hero-curve-img {
@@ -383,7 +382,6 @@ nav>a:nth-child(3)::after {
 
     background-color: rgba(241, 201, 83, 1);
     border-radius: 12px;
-    
 
     interpolate-size: allow-keywords;
 }
@@ -413,7 +411,7 @@ nav>a:nth-child(3)::after {
     outline: none;
     -webkit-tap-highlight-color: transparent;
 
-    border-radius: 0;
+    border-radius: 12px;
     background-color: rgba(241, 201, 83, 1);
     padding: 8px 12px;
 }
